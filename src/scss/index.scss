@@ -1,0 +1,28 @@
+
+// Google maps
+.mapouter {
+    position: relative;
+    text-align: right;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 500px;
+    max-width: 500px;
+}m
+
+.gmap-canvas {
+    overflow: hidden;
+    background: none !important;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+// Importing theme
+@import './theme/theme';
+
+// Importing fonts
+@import './typography/typography';
+
+// Bootstrap import
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

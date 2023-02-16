@@ -1,0 +1,46 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+
+// Theme colors
+$theme-blue: #232c3d;
+$theme-red: #be0a0abe;
+$theme-beige: #dcd3c2;
+$theme-danger: #dc3545;
+$theme-disabled: #494f55;
+$theme-link: #00000000;
+
+// Changing bootstrap colors
+$primary: #00ff4c;
+$secondary: #505059;
+$success: #0c8410;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #ea818b;
+$light: #f8f9fa;
+$dark: #212529;
+
+$custom-colors: (
+  'theme-blue': $theme-blue,
+  'theme-red': $theme-red,
+  'theme-beige': $theme-beige,
+  'theme-disabled': $theme-disabled,
+  'theme-danger': $theme-danger,
+  'theme-link': $theme-link,
+);
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+.custom-tooltip {
+  $tooltip-color: $theme-blue !important;
+  $tooltip-bg: $theme-beige !important;
+}
